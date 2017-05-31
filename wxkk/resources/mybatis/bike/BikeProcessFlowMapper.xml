@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="BikeProcessFlowMapper">
+	
+	<!-- 列表 -->
+	<select id="processFlowlist" parameterType="bikeProcessFlow" resultType="bikeProcessFlow">
+		select 
+			id as id,
+			customer_id as customerId,
+			type as type,
+			price as price,
+			note as note,
+			create_time as createTime
+		from 
+			t_bike_process_flow 
+		where 
+			1=1
+		<if test="type != null and type != ''">
+			and type = #{type}
+		</if>
+		<if test="customerId != null and customerId!= ''">
+			and customer_id = #{customerId}
+		</if>
+		order by create_time desc
+	</select>
+	
+	<!-- 新增-->
+	<insert id="save" parameterType="bikeProcessFlow" useGeneratedKeys="true" keyProperty="id">
+		insert into t_bike_process_flow(
+			bike_id,
+			customer_id,
+			type,
+			price,
+			note,
+			create_time
+		) values(
+			#{bikeId},
+			#{customerId},
+			#{type},
+			#{price},
+			#{note},
+			#{createTime}
+		)
+	</insert>
+</mapper>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="CustomerDeductionMapper">
+	
+	<!-- 通过id获取数据 -->
+	<select id="getByCustomerId" parameterType="Integer" resultType="customerDeduction">
+		SELECT 
+			id as id,
+			customer_id as customerId,
+			consumption_sum as consumptionSum,
+			deduction_sum as deductionSum,
+			not_deduction_sum as notDeductionSum,
+			note as note,
+			create_time as createTime,
+			update_time as updateTime
+		FROM 
+			t_customer_deduction
+		WHERE 
+			customer_id = #{customerId} 
+	</select>
+	
+	<!-- 更新用户的消费总额和可抵扣钱数-->
+	<update id="updatePrice" parameterType="customerDeduction">
+		update
+			t_customer_deduction
+		set
+			consumption_sum = #{consumptionSum},
+			not_deduction_sum = #{notDeductionSum}
+		where
+			id = #{id}
+	</update>
+	
+	<insert id="save"  parameterType="bikeHistory" useGeneratedKeys="true" keyProperty="id">
+		insert into t_customer_deduction(
+			customer_id,
+			consumption_sum,
+			deduction_sum,
+			not_deduction_sum,
+			note,
+			create_time
+		) values(
+			#{customerId},
+			#{consumptionSum},
+			#{deductionSum},
+			#{notDeductionSum},
+			#{note},
+			#{createTime}
+		)
+	</insert>
+</mapper>

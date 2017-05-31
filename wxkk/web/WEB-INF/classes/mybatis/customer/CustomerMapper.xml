@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="CustomerMapper">
+	
+	<!-- 新增-->
+	<insert id="save" parameterType="customer" useGeneratedKeys="true" keyProperty="id">
+		insert into t_customer(
+			mobile,
+			password,
+			wechat_id,
+			is_rent,
+			is_used,
+			is_valid,
+			is_pay_deposit,
+			is_certification,
+			create_time
+		) values(
+			#{mobile},
+			#{password},
+			#{wechatId},
+			#{isRent},
+			#{isUsed},
+			#{isValid},
+			#{isPayDeposit},
+			#{isCertification},
+			#{createTime}
+		)
+	</insert>
+	
+	<!-- 通过id获取数据 -->
+	<select id="getById" parameterType="Integer" resultType="Customer">
+		SELECT 
+			mobile as mobile,
+			password as password 
+		FROM 
+			t_customer  
+		WHERE 
+			id = ${id} 
+	</select>
+	
+	<!-- 通过wechatid获取数据 -->
+	<select id="getByWechatId" parameterType="String" resultType="Customer">
+		SELECT 
+			id as id,
+			mobile as mobile,
+			wechat_id as wechatId,
+			is_rent as isRent,
+			is_used as isUsed,
+			is_pay_deposit as isPayDeposit,
+			is_certification as isCertification,
+			is_valid as isValid,
+			create_time as createTime
+		FROM 
+			t_customer  
+		WHERE 
+			wechat_id = #{wechatId}
+	</select>
+	
+	<select id="getByMobile" parameterType="String" resultType="customer" useCache="false">
+		SELECT 
+		    c.id as id,
+			c.mobile AS mobile,
+			c.wechat_id as wechatId,
+			c.is_valid AS isValid,
+			c.is_rent as isRent,
+			c.is_used as isUsed,
+			c.is_pay_deposit as isPayDeposit,
+			c.is_certification as isCertification,
+			c.`create_time` AS createTime
+		FROM 
+			t_customer c
+		where 1=1
+			and c.mobile = #{mobile}
+	</select>
+	
+	<!-- 更新用户的wechatId -->
+	<update id="updateWechatId" parameterType="customer">
+		update 
+			t_customer
+		set 
+			wechat_id=#{wechatId}
+		where 
+			id = #{id}
+	</update>
+	
+	<!-- 更新用户成已认证状态 -->
+	<update id="updateCustomerIsCertification" parameterType="customer">
+		update 
+			t_customer
+		set 
+			is_certification=#{isCertification}
+		where 
+			id = #{id}
+	</update>
+	
+	<!-- 更新用户成已缴纳押金状态 -->
+	<update id="updateCustomerIsPayDeposit" parameterType="customer">
+		update 
+			t_customer
+		set 
+			is_pay_deposit=#{isPayDeposit}
+		where 
+			id = #{id}
+	</update>
+	
+	<!-- 更新用户的用车状态 -->
+	<update id="updateCustomerIsUsed" parameterType="customer">
+		update 
+			t_customer
+		set 
+			is_used=#{isUsed}
+		where 
+			id = #{id}
+	</update>
+	
+	<!-- 用户登录 -->
+	<select id="login" parameterType="customer" resultType="customer">
+		SELECT 
+			id as id,
+			mobile as mobile,
+			wechat_id as wechatId,
+			is_rent as isRent,
+			is_used as isUsed,
+			is_pay_deposit as isPayDeposit,
+			is_certification as isCertification,
+			is_valid as isValid,
+			create_time as createTime
+		FROM 
+			t_customer  
+		WHERE 
+			mobile = #{mobile}
+		and
+			wechat_id = #{wechatId}
+	</select>
+	
+	
+</mapper>

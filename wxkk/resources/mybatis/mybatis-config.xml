@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD SQL Map Config 3.0//EN"  
+	"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	
+	<settings> 
+        <setting name="cacheEnabled" value="true" /><!-- 全局映射器启用缓存 -->   
+        <setting name="useGeneratedKeys" value="true" /> 
+        <setting name="defaultExecutorType" value="REUSE" /> 
+    </settings>
+
+	<typeAliases>
+		<!-- 系统 -->
+		<typeAlias type="java.util.Map" alias="map"/>
+		<typeAlias type="cn.com.et.entity.bike.BikeInfo" alias="bikeInfo"/>
+		<typeAlias type="cn.com.et.entity.bike.BikeHistory" alias="bikeHistory"/>
+		<typeAlias type="cn.com.et.entity.bike.BikeOtherInfo" alias="bikeOtherInfo"/>
+		<typeAlias type="cn.com.et.entity.bike.BikeProcessFlow" alias="bikeProcessFlow"/>
+		<typeAlias type="cn.com.et.entity.bike.BikeReport" alias="bikeReport"/>
+		
+		
+		<typeAlias type="cn.com.et.entity.customer.Customer" alias="customer"/>
+		<typeAlias type="cn.com.et.entity.customer.CustomerDeduction" alias="customerDeduction"/>
+		<typeAlias type="cn.com.et.entity.customer.CustomerWallet" alias="customerWallet"/>
+		<typeAlias type="cn.com.et.entity.customer.CustomerOtherInfo" alias="customerOtherInfo"/>
+		<typeAlias type="cn.com.et.entity.customer.CustomerFeedBack" alias="customerFeedBack"/>
+		<typeAlias type="cn.com.et.entity.customer.CustomerDeposit" alias="customerDeposit"/>
+		
+		
+		<typeAlias type="cn.com.et.entity.house.HouseCustomerInfo" alias="houseCustomerInfo"/>
+		<typeAlias type="cn.com.et.entity.house.HouseHistory" alias="houseHistory"/>
+		<typeAlias type="cn.com.et.entity.house.HouseInfo" alias="houseInfo"/>
+		
+		<typeAlias type="cn.com.et.entity.message.Message" alias="message"/>
+		
+		<!-- 分页 -->
+		<typeAlias type="cn.com.et.plugin.page.Page" alias="Page"/>
+		
+	</typeAliases>
+	
+	<plugins>
+		<plugin interceptor="cn.com.et.plugin.page.PagePlugin">
+			<property name="dialect" value="mysql"/>
+			<property name="pageSqlId" value=".*listPage.*"/>
+		</plugin>
+	</plugins>
+	
+</configuration>

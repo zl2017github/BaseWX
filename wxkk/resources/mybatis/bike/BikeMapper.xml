@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="BikeMapper">
+	
+	<!-- 根据id获取车辆 -->
+	<select id="getById" parameterType="Integer" resultType="bikeInfo">
+		select 
+			id as id,
+			bike_num as bikeNum,
+			bike_pwd as bikePwd,
+			note as note,
+			is_valid as isValid,
+			create_time as createTime,
+			update_time as updateTime
+		from 
+			t_bike_info 
+		where 
+			id = #{id}
+	</select>
+	
+	<!-- 根据车牌号获取车辆 -->
+	<select id="getByBikeNum" parameterType="String" resultType="bikeInfo">
+		select 
+			id as id,
+			bike_num as bikeNum,
+			bike_pwd as bikePwd,
+			note as note,
+			is_valid as isValid,
+			create_time as createTime,
+			update_time as updateTime
+		from 
+			t_bike_info 
+		where 
+			bike_num = #{bikeNum}
+	</select>
+	
+</mapper>

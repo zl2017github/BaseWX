@@ -1,0 +1,589 @@
+{
+	"index.html": {
+		"resources": [
+			"img/more.png",
+			"img/f-page.jpg",
+			"img/focus2.jpg",
+			"img/goToTop.png",
+			"js/swiper.min.js",
+			"js/gotoTop.js",
+			"img/code3.png",
+			"img/cart.png",
+			"img/code2.png",
+			"img/img3.jpg",
+			"img/img1.jpg",
+			"img/img2.jpg",
+			"img/focus1.jpg",
+			"img/focus4.jpg",
+			"js/jquery-1.7.1.min.js",
+			"img/person.jpg",
+			"img/code1.png",
+			"img/searchbtn.png",
+			"img/bg2.png",
+			"img/bg1.png",
+			"css/style.css",
+			"img/cate.jpg",
+			"img/focus3.jpg",
+			"img/code4.png",
+			"css/swiper.min.css",
+			"img/logo.png",
+			"css/reset.css",
+			"img/toggle.png",
+			"settlement.html",
+			"shopCart.html",
+			"list.html",
+			"comment.html",
+			"coupon-page.html",
+			"coupon-receive.html",
+			"details.html",
+			"evaluate.html",
+			"signIn.html",
+			"mine.html",
+			"logistics.html",
+			"orderDetails.html",
+			"classify.html",
+			"scroll.html",
+			"img/code4.jpg",
+			"js/iscroll.js",
+			"img/person.png",
+			"img/cart-img.png",
+			"img/f-page.png",
+			"screen.html",
+			"indexCopy.html",
+			"RefundProductList.html",
+			"ChangeMember.html",
+			"ChangeMemberCopy.html",
+			"img/56fdeedbN401c1455.jpg",
+			"demo.html",
+			"css3SlideUp.html",
+			"form.html",
+			"select.html",
+			"refund.html",
+			"tuiguang.html",
+			"artical.html",
+			"tuiguang2.html",
+			"help.html",
+			"question.html",
+			"news.html",
+			"coupon-pag2.html",
+			"fightGroupStep.html",
+			"mineGroupDet.html",
+			"fightGroupSuccess.html",
+			"touch.html",
+			"fightGroupDet.html",
+			"fightGroupFailed.html",
+			"fightGroupList.html",
+			"inviteGroupDet.html",
+			"mineGroup.html"
+		],
+		"refer": [
+			"settlement.html",
+			"shopCart.html",
+			"list.html",
+			"comment.html",
+			"coupon-page.html",
+			"coupon-receive.html",
+			"details.html",
+			"evaluate.html",
+			"signIn.html",
+			"mine.html",
+			"logistics.html",
+			"orderDetails.html",
+			"classify.html",
+			"scroll.html",
+			"screen.html",
+			"indexCopy.html",
+			"RefundProductList.html",
+			"ChangeMember.html",
+			"ChangeMemberCopy.html",
+			"demo.html",
+			"css3SlideUp.html",
+			"form.html",
+			"select.html",
+			"refund.html",
+			"tuiguang.html",
+			"artical.html",
+			"tuiguang2.html",
+			"help.html",
+			"question.html",
+			"news.html",
+			"coupon-pag2.html",
+			"fightGroupStep.html",
+			"mineGroupDet.html",
+			"fightGroupSuccess.html",
+			"touch.html",
+			"fightGroupDet.html",
+			"fightGroupFailed.html",
+			"fightGroupList.html",
+			"inviteGroupDet.html",
+			"mineGroup.html"
+		]
+	},
+	"settlement.html": {
+		"resources": [
+			"img/address-bg.png",
+			"img/address-edit.png",
+			"img/cb-selected.png",
+			"js/common.js",
+			"img/cart-img.png",
+			"img/jt-r.png",
+			"img/redPoint.png",
+			"img/mine.png",
+			"css/style.css",
+			"img/logo.png",
+			"img/cart.png",
+			"js/jquery-1.7.1.min.js",
+			"css/reset.css"
+		]
+	},
+	"shopCart.html": {
+		"resources": [
+			"img/cb-selected.png",
+			"img/cart-img.png",
+			"js/AddSubstract.js",
+			"img/dele2.png",
+			"img/redPoint.png",
+			"img/goToTop.png",
+			"css/style.css",
+			"js/gotoTop.js",
+			"img/logo.png",
+			"img/cart.png",
+			"js/jquery-1.7.1.min.js",
+			"css/reset.css",
+			"img/cb-normal.png"
+		]
+	},
+	"list.html": {
+		"resources": [
+			"img/list-code1.png",
+			"img/listimg1.jpg",
+			"img/goToTop.png",
+			"img/code1.png",
+			"img/searchbtn.png",
+			"css/style.css",
+			"img/code3.png",
+			"img/logo.png",
+			"js/gotoTop.js",
+			"img/code2.png",
+			"img/cart.png",
+			"img/code4.png",
+			"js/jquery-1.7.1.min.js",
+			"css/reset.css",
+			"details.html"
+		],
+		"refer": [
+			"details.html"
+		]
+	},
+	"comment.html": {
+		"resources": [
+			"img/com-img1.jpg",
+			"img/redPoint.png",
+			"img/brand1.jpg",
+			"img/logo.png",
+			"img/goToTop.png",
+			"css/style.css",
+			"js/gotoTop.js",
+			"img/56fdeedbN401c1455.jpg",
+			"img/cart.png",
+			"js/jquery-1.7.1.min.js",
+			"css/reset.css"
+		]
+	},
+	"coupon-page.html": {
+		"resources": [
+			"img/xian2.png",
+			"img/coupon-bg1.png",
+			"img/sold-out.png",
+			"img/xian1.png",
+			"img/coupon-bg2.png",
+			"img/coupon-bg3.png",
+			"img/images/couponfailed.png",
+			"img/images/couponused.png",
+			"img/logo.png",
+			"img/redPoint.png",
+			"img/mine.png"
+		]
+	},
+	"coupon-receive.html": {
+		"resources": [
+			"img/xian2.png",
+			"img/coupon-bg1.png",
+			"img/sold-out.png",
+			"img/xian1.png"
+		]
+	},
+	"details.html": {
+		"resources": [
+			"img/dl1.png",
+			"img/img-d4.jpg",
+			"img/img-d5.jpg",
+			"img/jt-r.png",
+			"img/detail-comment.png",
+			"img/img-d3.jpg",
+			"img/img-d6.jpg",
+			"js/AddSubstract.js",
+			"img/img-d2.jpg",
+			"img/redPoint.png",
+			"img/detail-back.png",
+			"img/img-d1.jpg",
+			"img/choice-true.png",
+			"img/goToTop.png",
+			"js/swiper.min.js",
+			"css/style.css",
+			"js/gotoTop.js",
+			"img/cart.png",
+			"css/swiper.min.css",
+			"img/logo.png",
+			"css/reset.css",
+			"js/jquery-1.7.1.min.js",
+			"settlement.html"
+		],
+		"refer": [
+			"settlement.html"
+		]
+	},
+	"evaluate.html": {
+		"resources": [
+			"img/cart-img.png",
+			"css/style.css",
+			"js/jquery-1.7.1.min.js",
+			"css/reset.css"
+		]
+	},
+	"signIn.html": {
+		"resources": [
+			"img/signImg.png",
+			"img/accunt.png",
+			"img/pwd.png",
+			"img/dele1.png",
+			"css/style.css",
+			"js/jquery-1.7.1.min.js",
+			"css/reset.css",
+			"index.html"
+		],
+		"refer": [
+			"index.html"
+		]
+	},
+	"mine.html": {
+		"resources": [
+			"img/mine-bg.jpg",
+			"img/module6.png",
+			"img/module3.jpg",
+			"img/module1.jpg",
+			"img/module5.jpg",
+			"img/redPoint.png",
+			"img/mine.png",
+			"img/module2.jpg",
+			"img/head-img.png",
+			"img/module4.jpg",
+			"myOrder.html",
+			"css/style.css",
+			"img/cart.png",
+			"img/logo.png",
+			"css/reset.css",
+			"js/jquery-1.7.1.min.js",
+			"feedback.html",
+			"address.html",
+			"coupon-page.html",
+			"img/per-jtR.png",
+			"img/mine-bg.png",
+			"img/sign-icon.png",
+			"img/mine-icon1.png",
+			"img/mine-icon3.png",
+			"img/mine-icon2.png"
+		],
+		"refer": [
+			"myOrder.html",
+			"feedback.html",
+			"address.html",
+			"coupon-page.html"
+		]
+	},
+	"logistics.html": {
+		"resources": [
+			"img/wuliu-code2.png",
+			"img/wuliu-img1.png",
+			"img/wuliu-code1.png",
+			"img/wuliu-bg.png"
+		]
+	},
+	"myOrder.html": {
+		"resources": [
+			"logistics.html",
+			"js/alert.js",
+			"img/code2.png"
+		],
+		"refer": [
+			"logistics.html"
+		]
+	},
+	"orderDetails.html": {
+		"resources": [
+			"img/order-kefu2.png",
+			"img/jt-r.png",
+			"img/order-kefu.png",
+			"evaluate.html",
+			"logistics.html"
+		],
+		"refer": [
+			"evaluate.html",
+			"logistics.html"
+		]
+	},
+	"address.html": {
+		"resources": [
+			"img/address-bg.png",
+			"img/cb-selected.png",
+			"img/jt-r.png",
+			"img/dele2.png"
+		]
+	},
+	"classify.html": {
+		"resources": [
+			"img/code4.jpg",
+			"img/cart-img.png",
+			"js/iscroll.js",
+			"css/style.css",
+			"img/cart.png",
+			"js/jquery-1.7.1.min.js",
+			"css/reset.css"
+		]
+	},
+	"scroll.html": {
+		"resources": [
+			"js/iscroll.js"
+		]
+	},
+	"screen.html": {
+		"resources": [
+			"js/jquery-1.7.1.min.js"
+		]
+	},
+	"RefundProductList.html": {
+		"resources": [
+			"img/552cc151f216d_32.png",
+			"img/cart-img.png",
+			"img/code1.png",
+			"css/style.css",
+			"img/code2.png",
+			"css/reset.css"
+		]
+	},
+	"ChangeMember.html": {
+		"resources": [
+			"img/cb-selected.png",
+			"img/cb-normal.png",
+			"img/jt-r.png",
+			"img/head-img.png",
+			"css/style.css",
+			"css/reset.css",
+			"css/mobiscroll_date.css",
+			"js/mobiscroll_date.js",
+			"js/mobiscroll.js",
+			"css/mobiscroll.css"
+		]
+	},
+	"a.html": {
+		"resources": [
+			"date/js/seajs-main.js",
+			"date/css/hpublic.css",
+			"date/css/reset.css",
+			"/date/js/c-order.js",
+			"date/css/icon3.png",
+			"date/js/c-stat.js",
+			"date/js/sea.js",
+			"js/jquery-1.7.1.min.js"
+		]
+	},
+	"ChangeMemberCopy.html": {
+		"resources": [
+			"img/cb-selected.png",
+			"img/cb-normal.png",
+			"css/mobiscroll_date.css",
+			"js/mobiscroll_date.js",
+			"js/mobiscroll.js",
+			"img/jt-r.png",
+			"img/head-img.png",
+			"css/mobiscroll.css",
+			"css/style.css",
+			"js/jquery-1.7.1.min.js",
+			"css/reset.css"
+		]
+	},
+	"demo.html": {
+		"resources": [
+			"js/date.js",
+			"css/common2.css",
+			"js/iscroll.js",
+			"js/jquery-1.7.1.min.js"
+		]
+	},
+	"refund.html": {
+		"resources": [
+			"img/jt-r.png",
+			"img/add-code.png"
+		]
+	},
+	"tuiguang.html": {
+		"resources": [
+			"img/inteReduce.png",
+			"img/inteadd.png",
+			"css/style.css",
+			"js/jquery-1.7.1.min.js",
+			"css/reset.css"
+		]
+	},
+	"tuiguang2.html": {
+		"resources": [
+			"img/wxcode.png",
+			"img/spread2.png",
+			"img/spread4.png",
+			"img/spread6.png",
+			"img/wxbg.png",
+			"img/spread3.png",
+			"img/jt-r.png",
+			"img/spread5.png",
+			"img/spread1.png"
+		]
+	},
+	"help.html": {
+		"resources": [
+			"img/jtr.png",
+			"img/helpimg.png",
+			"img/logo.png",
+			"img/redPoint.png",
+			"img/mine.png"
+		]
+	},
+	"question.html": {
+		"resources": [
+			"img/logo.png",
+			"img/redPoint.png",
+			"img/mine.png",
+			"css/style.css",
+			"img/cart.png",
+			"js/jquery-1.7.1.min.js",
+			"css/reset.css"
+		]
+	},
+	"news.html": {
+		"resources": [
+			"img/logo.png",
+			"img/dele2.png",
+			"img/redPoint.png",
+			"img/mine.png",
+			"css/style.css",
+			"img/cart.png",
+			"js/jquery-1.7.1.min.js",
+			"css/reset.css"
+		]
+	},
+	"coupon-pag2.html": {
+		"resources": [
+			"img/logo.png",
+			"img/redPoint.png",
+			"img/mine.png",
+			"css/style.css",
+			"img/cart.png",
+			"css/reset.css"
+		]
+	},
+	"fightGroupStep.html": {
+		"resources": [
+			"img/step.png"
+		]
+	},
+	"mineGroupDet.html": {
+		"resources": [
+			"img/protrait.png",
+			"img/jtr.png",
+			"img/jt-r2.png",
+			"img/protrait2.png",
+			"img/images/group2.png",
+			"img/request.png",
+			"img/group1.png",
+			"css/style.css",
+			"img/focus1.jpg",
+			"js/jquery-1.7.1.min.js",
+			"css/reset.css",
+			"img/jiantouR.png"
+		]
+	},
+	"fightGroupSuccess.html": {
+		"resources": [
+			"img/protrait.png",
+			"img/jtr.png",
+			"img/jt-r2.png",
+			"img/groupS.png",
+			"img/images/group2.png",
+			"img/group1.png",
+			"css/style.css",
+			"img/focus1.jpg",
+			"js/jquery-1.7.1.min.js",
+			"css/reset.css",
+			"img/jiantouR.png"
+		]
+	},
+	"fightGroupDet.html": {
+		"resources": [
+			"img/jt-r2.png",
+			"img/groupbg.png",
+			"img/group1.png",
+			"img/focus2.jpg",
+			"css/swiper.min.css",
+			"js/swiper.min.js",
+			"css/style.css",
+			"img/focus3.jpg",
+			"img/focus1.jpg",
+			"img/focus4.jpg",
+			"css/reset.css"
+		]
+	},
+	"fightGroupFailed.html": {
+		"resources": [
+			"img/groupF.png",
+			"img/protrait.png",
+			"img/jtr.png",
+			"img/jt-r2.png",
+			"img/images/group2.png",
+			"img/group1.png",
+			"css/style.css",
+			"img/focus1.jpg",
+			"css/reset.css",
+			"img/jiantouR.png"
+		]
+	},
+	"fightGroupList.html": {
+		"resources": [
+			"img/jt-r2.png",
+			"img/images/group2.png",
+			"img/group1.png",
+			"css/style.css",
+			"img/focus1.jpg",
+			"css/reset.css"
+		]
+	},
+	"inviteGroupDet.html": {
+		"resources": [
+			"img/jiantouR.png",
+			"img/protrait.png",
+			"img/jt-r2.png",
+			"img/protrait2.png",
+			"img/images/group2.png",
+			"img/group1.png"
+		]
+	},
+	"mineGroup.html": {
+		"resources": [
+			"img/jt-r2.png",
+			"img/groupbg3.png",
+			"img/groupbg2.png",
+			"img/images/group2.png",
+			"css/style.css",
+			"img/focus1.jpg",
+			"css/reset.css"
+		]
+	}
+}

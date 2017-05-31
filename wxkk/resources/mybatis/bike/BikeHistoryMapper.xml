@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="BikeHistoryMapper">
+	
+	<!-- 列表 -->
+	<select id="getByCustomerId" parameterType="Integer" resultType="bikeHistory">
+		select 
+			id as id,
+			begin_location as beginLocation,
+			begin_time as beginTime,
+			end_location as endLocation,
+			end_time as endTime,
+			photo as photo,
+			bike_num as bikeNum,
+			price as price,
+			is_deduction as isDeduction,
+			is_valid as isValid,
+			create_time as createTime
+		from 
+			t_bike_history 
+		where 
+			1=1
+		and 
+			customer_id = #{customerId}
+		and
+			is_valid = 1
+		order by create_time desc
+	</select>
+	
+	<!-- 新增-->
+	<insert id="save" parameterType="bikeHistory" useGeneratedKeys="true" keyProperty="id">
+		insert into t_bike_history(
+			bike_id,
+			customer_id,
+			begin_point,
+			begin_location,
+			begin_time,
+			end_point,
+			end_location,
+			end_time,
+			photo,
+			bike_num,
+			price,
+			is_deduction,
+			is_valid,
+			create_time
+		) values(
+			#{bikeId},
+			#{customerId},
+			#{beginPoint},
+			#{beginLocation},
+			#{beginTime},
+			#{endPoint},
+			#{endLocation},
+			#{endTime},
+			#{photo},
+			#{bikeNum},
+			#{price},
+			#{isDeduction},
+			#{isValid},
+			#{createTime}
+		)
+	</insert>
+	
+	<!-- 根据id进行查询-->
+	<select id="getById" parameterType="Integer" resultType="bikeHistory">
+		select 
+			id as id,
+			bike_id as bikeId,
+			customer_id as customerId,
+			begin_point as beginPoint,
+			begin_location as beginLocation,
+			begin_time as beginTime,
+			end_point as endPoint,
+			end_location as endLocation,
+			end_time as endTime,
+			photo as photo,
+			bike_num as bikeNum,
+			price as price,
+			is_deduction as isDeduction,
+			is_valid as isValid,
+			create_time as createTime,
+			update_time as updateTime
+		from 
+			t_bike_history 
+		where 
+			id = #{id}
+	</select>
+	
+	<!-- 结束骑行，更新结束位置信息-->
+	<update id="updateFinishBike" parameterType="bikeHistory">
+		update
+			t_bike_history
+		set
+			end_point = #{endPoint},
+			end_location = #{endLocation},
+			end_time = #{endTime},
+			price = #{price},
+			is_deduction = #{isDeduction}
+		where
+			id = #{id}
+	</update>
+	
+	<!-- 将车辆置为无效状态-->
+	<update id="updateToIsNotvalid" parameterType="Integer">
+		update
+			t_bike_history
+		set
+			is_valid = 0
+		where
+			id = #{id}
+	</update>
+</mapper>

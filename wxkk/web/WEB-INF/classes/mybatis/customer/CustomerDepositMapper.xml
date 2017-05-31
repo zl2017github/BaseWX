@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="CustomerDepositMapper">
+	
+	<!-- 新增-->
+	<insert id="save" parameterType="customerDeposit" useGeneratedKeys="true" keyProperty="id">
+		insert into t_customer_deposit(
+			customer_id,
+			wallet_id,
+			deposit_price,
+			type,
+			apply_time,
+			refund_time,
+			create_time
+		) values(
+			#{customerId},
+			#{walletId},
+			#{depositPrice},
+			#{type},
+			#{applyTime},
+			#{refundTime},
+			#{createTime}
+		)
+	</insert>
+</mapper>

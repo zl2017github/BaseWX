@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="MessageMapper">
+	
+	<!-- 新增-->
+	<insert id="save" parameterType="message" useGeneratedKeys="true" keyProperty="id">
+		insert into t_message(
+			mobile,
+			content,
+			return_status,
+			message,
+			remain_point,
+			task_id,
+			success_counts,
+			return_String,
+			create_time
+		) values(
+			#{mobile},
+			#{content},
+			#{returnStatus},
+			#{message},
+			#{remainPoint},
+			#{taskId},
+			#{successCounts},
+			#{returnString},
+			#{createTime}
+		)
+	</insert>
+	
+</mapper>

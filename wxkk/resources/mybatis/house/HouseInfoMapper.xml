@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="HouseInfoMapper">
+	
+	<!-- 列表 -->
+	<select id="houseInfoList" resultType="houseInfo" useCache="false">
+		SELECT 
+			h.id as id,
+			h.location as location,
+			h.is_rent as isRent, 
+			h.price as price,
+			h.note as note, 
+			h.is_valid as isValid, 
+			h.create_time as createTime,
+			h.update_time as updateTime
+		FROM
+		  	t_house_info h
+		where 
+			is_rent = 1
+		and
+			h.is_valid = 1
+	</select>
+	
+</mapper>

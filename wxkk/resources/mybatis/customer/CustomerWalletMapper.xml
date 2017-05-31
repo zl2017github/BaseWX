@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="CustomerWalletMapper">
+	
+	<!-- 通过id获取数据 -->
+	<select id="getByCustomerId" parameterType="Integer" resultType="customerWallet">
+		SELECT 
+			id as id,
+			customer_id as customerId,
+			remaining_price as remainingPrice,
+			deposit_price as depositPrice,
+			source as source,
+			source_account as sourceAccount,
+			create_time as createTime,
+			update_time as updateTime
+		FROM 
+			t_customer_wallet
+		WHERE 
+			customer_id = #{customerId} 
+	</select>
+	
+	<!-- 更新用户的余额-->
+	<update id="updateCustomerPrice" parameterType="customerWallet">
+		update
+			t_customer_wallet
+		set
+			remaining_price = #{remainingPrice}
+		where
+			id = #{id}
+	</update>
+	
+	<!-- 新增-->
+	<insert id="save" parameterType="customerWallet" useGeneratedKeys="true" keyProperty="id">
+		insert into t_customer_wallet(
+			customer_id,
+			remaining_price,
+			deposit_price,
+			source,
+			source_account,
+			create_time
+		) values(
+			#{customerId},
+			#{remainingPrice},
+			#{depositPrice},
+			#{source},
+			#{sourceAccount},
+			#{createTime}
+		)
+	</insert>
+</mapper>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="CustomerOtherInfoMapper">
+	
+	<!-- 新增-->
+	<insert id="save" parameterType="customerOtherInfo" useGeneratedKeys="true" keyProperty="id">
+		insert into t_customer_other_info(
+			t_customer_id,
+			name,
+			nick,
+			sex,
+			birthday,
+			type,
+			id_number,
+			cer_picture,
+			create_time
+		) values(
+			#{tCustomerId},
+			#{name},
+			#{nick},
+			#{sex},
+			#{birthday},
+			#{type},
+			#{idNumber},
+			#{cerPicture},
+			#{createTime}
+		)
+	</insert>
+	
+	<!-- 通过身份证查找信息 -->
+	<select id="getByIdNum" parameterType="String" resultType="customerOtherInfo">
+		SELECT 
+			t_customer_id as tCustomerId,
+			name as name,
+			nick as nick,
+			sex as sex,
+			birthday as birthday,
+			type as type,
+			id_number as idNumber,
+			cer_picture as cerPicture,
+			create_time as createTime
+		FROM 
+			t_customer_other_info  
+		WHERE 
+			id_number = #{idNumber} 
+	</select>
+</mapper>

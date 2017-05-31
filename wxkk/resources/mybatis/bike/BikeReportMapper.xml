@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="BikeReportMapper">
+	
+	<!-- 新增-->
+	<insert id="save" parameterType="bikeReport" useGeneratedKeys="true" keyProperty="id">
+		insert into t_bike_report(
+			bike_id,
+			customer_id,
+			type,
+			photo,
+			location,
+			bike_num,
+			note,
+			is_valid,
+			create_time
+		) values(
+			#{bikeId},
+			#{customerId},
+			#{type},
+			#{photo},
+			#{location},
+			#{bikeNum},
+			#{note},
+			#{isValid},
+			#{createTime}
+		)
+	</insert>
+	
+</mapper>

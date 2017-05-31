@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="CustomerFeedBackMapper">
+	
+	<!-- 新增-->
+	<insert id="save" parameterType="customerFeedBack" useGeneratedKeys="true" keyProperty="id">
+		insert into t_customer_feed_back(
+			customer_id,
+			text,
+			is_valid,
+			create_time
+		) values(
+			#{customerId},
+			#{text},
+			#{isValid},
+			#{createTime}
+		)
+	</insert>
+	
+</mapper>

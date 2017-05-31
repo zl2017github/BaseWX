@@ -1,0 +1,1266 @@
+html,body {
+	height: 100%;
+}
+.posiR {
+	position: relative;
+}
+input[type="button"], input[type="submit"], input[type="reset"] {
+-webkit-appearance: none;
+}
+/*首页页面样式开始*/
+.indRemind {
+	position: absolute;
+	top: 4rem;
+	left: 0;
+	z-index: 5;
+	background: rgba(0,0,0,0.3);
+	padding: 0 5%;
+	color: #fff;
+	font-size: 1.4rem;
+	height: 2.6rem;
+	line-height: 2.6rem;
+	width: 100%;
+	text-align: left;
+}
+.indRe_icon {
+	display: inline-block;
+	height: 1.6rem;
+	padding-right: 0.5rem;
+	vertical-align: middle;
+	position: relative;
+	top: -1px;
+}
+.focusImg {
+	display: block;
+	width: 100%;
+}
+.modulList {
+	overflow: hidden;
+	zoom: 1;
+	padding: 1.5rem 0;
+}
+.modulList li {
+	float: left;
+	width: 42%;
+	margin: 0 2% 1rem 4%;
+	padding: 1rem;
+	box-sizing: border-box;
+	border-radius: 6px;
+	text-align: center;
+	overflow: hidden;
+	zoom: 1;
+	position: relative;
+}
+.moduleBox {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+}
+.modulList .mine {
+	background: #3399ff;
+}
+.modulList .ride {
+	background: #fb7c58;
+}
+.modulList .repair {
+	background: #00cc99;
+}
+.modulList .aboutUs {
+	background: #cc00ff;
+}
+.moduleImg {
+	display: inline-block;
+	width: 4rem;
+	height: 4rem;
+	float: right;
+}
+.moduleWord {
+	float: left;
+	color: #fff;
+	line-height: 3rem;
+	font-size: 1.8rem;
+}
+.moduleBg {
+	position: absolute;
+	left: 2rem;
+	bottom: 0.5rem;
+	display: inline-block;
+	width: 4rem;
+	height: auto;
+}
+.noticeBox {
+	margin: 0 4%;
+	font-size: 1.3rem;
+	text-align: left;
+	background: url(../images/notice.png) no-repeat left 3px;
+	background-size: 1.4rem auto;
+	padding-left: 2rem;
+}
+.noticeRemind {
+	color: #fb7c58;
+}
+.advertAlert {
+	position: fixed;
+	width: 80%;
+	top: 10%;
+	left: 10%;
+	z-index: 22;
+	display: none;
+}
+.advertCon {
+	position: relative;
+	z-index: 23;
+	width: 100%;
+}
+.advertClose {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 8rem;
+	text-align: right;
+	cursor: pointer;
+}
+.adClose_icon {
+	display: inline-block;
+	height: 7rem;
+	padding: 1rem 1rem 0 0;
+}
+.advertImg {
+	padding-top: 7.8rem;
+	display: block;
+	width: 100%;
+	height: auto;
+}
+.advertBtnBox {
+	background: #fff;
+}
+/*首页页面样式结束*/
+
+
+/*提醒页面样式开始*/
+.businessDet {
+	padding: 1rem 0;
+}
+.businessDet li {
+	overflow: hidden;
+	zoom: 1;
+	font-size: 1.3rem;
+}
+.businessL, .businessR {
+	float: left;
+}
+.noticeExplain {
+	
+}
+.noticeExplain p {
+	font-size: 1.3rem;
+	color: #666;
+	line-height: 1.5;
+	text-indent: 2.6rem;
+	padding: 0.3rem 0;
+}
+.explainTit {
+	font-size: 1.4rem;
+	font-weight: normal;
+	padding: 0.5rem 0;
+}
+/*提醒页面样式结束*/
+
+/*个人中心页面样式开始*/
+.personalHead {
+	position: relative;
+	width: 100%;
+	height: 12rem;
+	background: #e0e0e0;
+}
+.perPortrait {
+	position: absolute;
+	top: 2rem;
+	left: 50%;
+	margin-left: -3rem;
+	display: inline-block;
+	width: 6rem;
+	height: 6rem;
+	border-radius: 50%;
+	overflow: hidden;
+	background: #fff;
+	border: 1px solid #e0e0e0;
+}
+.perImg {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.nickname {
+	text-align: center;
+	padding-top: 9rem;
+	font-size: 1.4rem;
+}
+.perCon {
+	background: #f7f7f7;
+}
+.perLinkList {
+	padding: 0 4%;
+	background: #fff;
+}
+.perLinkList li {
+	overflow: hidden;
+	zoom: 1;
+	height: 3.4rem;
+	line-height: 3.4rem;
+	position: relative;
+	font-size: 1.3rem;
+	border-bottom: 1px solid #f0f0f0;
+}
+.perLinkTit {
+	float: left;
+}
+.perLinkJt {
+	position: absolute;
+	top: 0.7rem;
+	right: 0;
+	display: inline-block;
+	height: 1.6rem;
+	max-width: 1.2rem;
+}
+.perLinkDet { 
+	float: right;
+	padding-right: 2rem;
+}
+
+
+
+/*个人中心页面样式结束*/
+
+
+/*我的行程页面样式开始*/
+.tripList {
+	background: #fff;
+}
+.tripList>li {
+	font-size: 1.3rem;
+	margin-bottom: 1.5rem;
+	background: #fdfdfd;
+	padding: 0 4%;
+	border-bottom: 1px solid #e0e0e0;
+	border-top: 1px solid #e0e0e0;
+	box-shadow: 0 0 5px #eee;
+}
+.tripDetList {
+}
+.tripDetList li {
+	overflow: hidden;
+	zoom: 1;
+	border-bottom: 1px solid #e0e0e0;
+	padding: 0.8rem 0;
+	font-size: 1.3rem;
+	color: #4d4d4d;
+}
+.tripDetList li:last-child {
+	border-bottom: 1px solid transparent;
+}
+.tripDetList .tripD_left {
+	float: left;
+	text-align: left;
+	min-width: 20%;
+	line-height: 1.5rem;
+}
+.tripDetList .tripD_right {
+	float: left;
+	text-align: left;
+	word-break: break-word;
+	box-sizing: border-box;
+	line-height: 1.5rem;
+	max-width: 80%;
+}
+.consumeNum {
+	color: #fb7c58;
+	padding-left: 0.6rem;
+	font-size: 1.6rem;
+}
+.tripDet {
+	font-size: 1.2rem;
+	color: #777;
+	overflow: hidden;
+	zoom: 1;
+}
+.bicycleNum {
+	color: #0099FF;
+}
+.tripTime {
+	float: left;
+}
+
+/*我的行程页面样式结束*/
+
+/*我要用车页面样式开始*/
+.keyboard-box {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	overflow: hidden;
+	zoom: 1;
+	width: 100%;
+	box-shadow: 0 0 3px #ccc;
+}
+.keyboard-left {
+	float: left;
+	width: 75%;
+	box-sizing: border-box;
+}
+.keyboard-right {
+	width: 25%;
+	float: right;
+}
+.num-list {
+	overflow: hidden;
+	zoom: 1;
+	width: 100%;
+	border-top: 1px solid #ccc;
+	background: #fff;
+}
+.num-list li {
+	float: left;
+	height: 6rem;
+	line-height: 6rem;
+	text-align: center;
+	width: 33.33%;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-s-box-sizing: border-box;
+	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	font-size: 1.6rem;
+}
+.num-list li a {
+	display: block;
+	font-size: 1.6rem;
+}
+.num-list li a:active {
+	background: #f5f5f5;
+}
+.num-list li:nth-child(3),.num-list li:nth-child(6),.num-list li:nth-child(9) {
+	width: 33.34%;
+}
+/*.zero-li {
+	width: 66.66% !important;
+}*/
+.inp-dele {
+	height: 6rem;
+	width: 100%;
+	text-align: center;
+	box-sizing: border-box;
+	border-top: 1px solid #ccc;
+	background: #fff;
+	cursor: pointer;
+}
+.dele-icon {
+	display: inline-block;
+	height: 1.6rem;
+	margin-top: 2.2rem;
+}
+.zeroBtn {
+	height: 6rem;
+	line-height: 6rem;
+	font-size: 1.6rem;
+	/*font-weight: bold;*/
+	width: 100%;
+	text-align: center;
+	box-sizing: border-box;
+	border-bottom: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	background: #fff;
+	cursor: pointer;
+}
+.paySure {
+	line-height: 2rem;
+	padding: 7rem 0;
+	width: 100%;
+	color: #fff;
+	font-size: 1.6rem;
+	text-align: center;
+	cursor: pointer;
+}
+.pay-sure {
+	height: 6rem;
+	line-height: 6rem;
+	background: #8bcce9;
+	text-align: center;
+	color: #fff;
+	font-size: 1.8rem;
+}
+.pay-sureS {
+	background: #00a0e9;
+}
+.bicycleBox { 
+	background: #f7f7f7;
+	text-align: center;
+	padding: 2rem 0;
+}
+.bicycleImg {
+	display: inline-block;
+	width: 40%;
+	height: auto;
+}
+.billingRules {
+	padding: 1rem 0;
+	text-align: center;
+	font-size: 1.3rem;
+	color: #777;
+}
+.billingPrice {
+	color: #0099ff;
+	font-weight: bold;
+	padding: 0 0.3rem;
+	font-size: 1.4rem;
+}
+.bicycleDet {
+	width: 80%;
+	margin: 1rem 10%;
+	overflow: hidden;
+	zoom: 1;
+}
+.bicEntryNum {
+	height: 3rem;
+	line-height: 3rem;
+	width: 70%;
+	padding: 0 1rem;
+	box-sizing: border-box;
+	font-size: 1.4rem;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+.bicycleBtn {
+	display: inline-block;
+	border: none;
+	background: #0099ff;
+	border-radius: 5px;
+	height: 3rem;
+	padding: 0 1.5rem;
+	line-height: 3rem;
+	text-align: center;
+	color: #fff;
+	font-size: 1.4rem;
+	letter-spacing: 2px;
+}
+.bicRemind {
+	color: #9999ff;
+	font-size: 1.2rem;
+	text-align: left;
+	padding: 1rem 0 1rem 12%;
+	letter-spacing: 1px;
+}
+/*我要用车页面样式结束*/
+
+/*关于我们页面样式开始*/
+.aboutList .perLinkDet {
+	padding-right: 0;
+}
+.aboutUs_head {
+	height: 14rem;
+}
+.et_edition {
+	text-align: center;
+	font-size: 1.2rem;
+	color: #666;
+	text-align: center;
+	padding-top: 0.5rem;
+}
+
+/*关于我们页面样式结束*/
+
+/*单车报修页面样式开始*/
+.damageReason {
+	width: 92%;
+	margin: 0 4%;
+}
+.damageReason>li {
+	padding: 0 0.5rem;
+	line-height: 3rem;
+	height: 3rem;
+	overflow: hidden;
+	zoom: 1;
+	border-bottom: 1px solid #e0e0e0;
+	cursor: pointer;
+}
+.reasonWord {
+	float: left;
+	font-size: 1.3rem;
+}
+.choiceReason {
+	display: inline-block;
+	height: 1.6rem;
+	width: auto;
+	float: right;
+	display: none;
+	margin: 0.7rem 0;
+}
+
+/*单车报修页面样式结束*/
+
+/*我的钱包页面样式开始*/
+.surplusMoney {
+	padding: 2rem 0;
+	text-align: center;
+	font-size: 1.3rem;
+	color: #727272;
+	line-height: 1.5;
+}
+.surplusNum {
+	font-size: 3.2rem;
+	color: #fb7c58;
+	line-height: 5rem;
+}
+.deposit {
+	text-align: center;
+	font-size: 1.2rem;
+	color: #888;
+}
+.depositNum, .depositRefund {
+	color: #0099FF;
+	font-size: 1.4rem;
+	padding: 0 0.3rem;
+	font-weight: bold;
+}
+.depositRefund {
+	
+}
+.moneyIcon {
+	display: inline-block;
+	width: 40%;
+	height: auto;
+	margin-top: 2rem;
+}
+
+/*我的钱包页面样式结束*/
+
+/*抵扣券页面样式开始*/
+.deduMoney {
+	width: 26%;
+}
+.deductionDet {
+	background: #fefefe;
+	box-shadow: 0 0 10px #ccc;
+	margin-top: 2rem;
+}
+.deduRemind {
+	color: #999;
+	font-size: 1.2rem;
+	line-height: 1.8rem;
+	text-align: left;
+	padding: 0 4%;
+}
+
+/*抵扣券页面样式结束*/
+
+/*单车开锁页面样式开始*/
+.lockPosi {
+	display: block;
+	width: 40%;	
+	height: auto;
+	margin: 2rem auto;
+}
+.bicNumBox {
+	padding: 1rem 4%;
+	text-align: center;
+	font-size: 1.3rem;
+}
+.bicNumber {
+	color: #fb7c58;
+	font-size: 1.5rem;
+	padding: 0 .5rem;
+}
+.lockPassList {
+	overflow: hidden;
+	zoom: 1;
+	padding: 2rem 4%;
+}
+.lockPassList li {
+	float: left;
+	width: 25%;
+	text-align: center;
+}
+.lockPassList .lockNum {
+	display: inline-block;
+	width: 4em;
+	height: 4rem;
+	border: 1px solid #e0e0e0;
+	border-radius: 5px;
+	text-align: center;
+	line-height: 4rem;
+	font-size: 1.5rem;
+	color: #0033FF;
+	box-shadow: 0 0 10px #ccc;
+}
+.lockRemind {
+	padding: 4rem 4% 1rem 4%;
+	text-align: center;
+	font-size: 1.3rem;
+	line-height: 2.2rem;
+	color: #808080;
+}
+.lockRemind span, .lockRemind a {
+	font-size: 1.3rem;
+	padding: 0 0.5rem;
+}
+.countDown {
+	color: #0033ff;
+}
+.immeRepair {
+	color: #fb7c58;
+}
+
+/*单车开锁页面样式结束*/
+
+
+/*当前耗时、骑行时间页面样式开始*/
+.curTimeTit {
+	padding: 2rem 0;
+	text-align: center;
+	font-size: 1.4rem;
+}
+.curTimeNum {
+	text-align: center;
+	line-height: 3rem;
+	font-size: 2.4rem;
+}
+/*.curTimeNum span {
+	font-size: 2.4rem;
+	padding: 0 0.3rem;
+	line-height: 3rem;
+}*/
+.bicMoneyBox {
+	padding-top: 2rem;
+	color: #808080;
+	text-align: center;
+	font-size: 1.3rem;
+}
+.bicMoney {
+	font-size: 1.6rem;
+	color: #0033FF;
+	padding: 0 0.5rem;
+}
+.overRemind {
+	margin: 2rem 0;
+	padding: 1.5rem 1rem;
+	text-align: center;
+	background: #f7f7f7;
+	font-size: 1.4rem;
+	color: #fb7c58;
+}
+/*当前耗时、骑行时间页面样式结束*/
+
+
+/*充值页面样式开始*/
+.chargeRemind {
+	font-size: 1.2rem;
+	color: #808080;
+	padding: 1rem 4%;
+	text-align: center;
+}
+.chargeAgree {
+	color: #0033FF;
+}
+.chageTit {
+	padding: 1rem 4%;
+	text-align: left;
+	font-size: 1.3rem;
+	background: #f7f7f7;
+	border-bottom: 1px solid #e0e0e0;
+}
+.chargeList {
+	padding: 1rem 4%;
+	overflow: hidden;
+	zoom: 1;
+}
+.chargeList li {
+	float: left;
+	width: 33.33%;
+	text-align: center;
+}
+.chargeList li.chaActive .chargeLBox {
+	background: #fb7c58;
+	border: 1px solid #fb7c58;
+}
+.chargeList li.chaActive .actualCharge {
+	color: #fff;
+}
+.chargeList li.chaActive .obtainCharge {
+	color: #00A0E9;
+}
+.chargeLBox {
+	width: 80%;
+	display: inline-block;
+	line-height: 2rem;
+	height: 4rem;
+	padding: 0.5rem 0;
+	border: 1px solid #e0e0e0;
+	border-radius: 3px;
+	background: #f0f0f0;
+}
+.actualCharge {
+	color: #666;
+	text-align: center;
+	font-size: 1.6rem;
+}
+.obtainCharge {
+	text-align: center;
+	font-size: 1.4rem;
+	color: #333;
+}
+/*充值页面样式结束*/
+
+
+/*登录注册页面样式开始*/
+.sign-img1{
+	display: inline-block;
+	width: 100%;
+}
+.signIn-box{
+	width: 90%;
+	margin:.5rem 5%;
+	border-bottom: 1px solid #f1f1f1;
+	height:5rem;
+	position: relative;
+}
+.sign-icon{
+	display: inline-block;
+	width: 2.8rem;
+	float: left;
+	margin-top: .8rem;
+}
+.sign-inp{
+	height:1.6rem;
+	padding: .7rem 0;
+	float: left;
+	border: none;
+	width: 80%;
+	padding-left:3%;
+	font-size: 1.4rem;
+	line-height:1.6rem;
+	color: #333;
+	margin-top: 1rem;
+}
+.dele{
+	position: absolute;
+	top:1.5rem;
+	right: 1rem;
+	width: 1.5rem;
+	height: 1.5rem;
+	background: url(../images/dele1.png) repeat;
+	background-size: 100% 100%;
+	display: none;
+}
+.sign-inp::-webkit-input-placeholder{
+	color: #ccc;;
+}
+.sign-btn1{
+	width: 90%;
+	margin:2rem 5%;
+}
+.signbtn{
+	width: 100%;
+	height: 3.8rem;
+	font-size: 1.8rem;
+	color: #fff;
+	line-height: 1;
+	background: #bbb;
+	/*background: #ab2b2b;*/
+	border-radius: 3px !important;
+	-webkit-border-radius: 3px !important;
+	-moz-border-radius: 3px !important;
+	-o-border-radius: 3px !important;
+	-ms-border-radius: 3px !important;
+}
+.register{
+	font-size: 1.3rem;
+	line-height: 3;
+	text-align: right;
+	/*text-decoration: underline;*/
+	color: #333;
+}
+.send-out{
+	position: absolute;
+	top:1rem;
+	right: 1rem;
+	width: 10rem;
+	height: 2.5rem;
+	font-size: 1.3rem;
+	background: #ccc;
+	color:#fff;
+	line-height: 2.5rem;
+	text-align: center;
+	letter-spacing: 1px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	
+}
+.send-out-bg{
+	background: #fb7c58;
+	cursor: pointer;
+}
+.signbtn input:disabled{
+	background-color: #F5F5F5;
+}
+.verification{
+	position: absolute;
+    top: .4rem;
+    right: 1rem;
+    display: inline-block;
+    width: 10rem;
+    height: 3rem;
+    border: 1px solid #ccc;
+	   
+}
+.head_right {
+	padding: 1rem 4%;
+	font-size: 1.2rem;
+	color: #808080;
+	text-align: left;
+}
+.head_right span {
+	font-size: 1.2rem;
+	color: #0099FF;
+	
+}
+/*登录注册页面样式结束*/
+
+/*上传照片页面样式开始*/
+.photoEx {
+	font-size: 1.2rem;
+	color: #fb7c58;
+	text-align: right;
+	line-height: 2.6rem;
+	padding: 0 4% 0.5rem 4%;
+	cursor: pointer;
+}
+.fixedBtnBox {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	z-index: 12;
+	padding: 1rem 0;
+}
+.uploadBox {
+	margin: 0 4% 1rem 4%;
+	border: 3px dashed #f0f0f0;
+	/*height: 10rem;*/
+	text-align: center;
+	position: relative;
+	z-index: 7;
+}
+.upAdd {
+	font-size: 6.6rem;
+	display: inline-block;
+	color: #e0e0e0;
+}
+.upWord {
+	font-size: 1.3rem;
+	line-height: 2rem;
+	color: #999;
+	text-align: center;
+}
+.upBtn {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 8;
+	display: block;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+}
+.upImg {
+	display: inline-block;
+	height: 100%;
+}
+.exPhoto {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+
+/*上传照片页面样式结束*/
+
+
+/*意见反馈页面样式开始*/
+.textarea-box{
+	width: 90%;
+	margin:1rem 5%;
+	position: relative;
+	border: 1px solid #e0e0e0;
+	height: 12rem;
+}
+.textcount{
+	position: absolute;
+	bottom: .5rem;
+	right: 1rem;
+	font-size: 1.4rem;
+	color: #999;
+}
+.options{
+	width: 100%;
+	height: 100%;
+	border:none;
+	resize : none;
+	font-size: 1.4rem;
+	padding:.5rem .5rem;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	color: #999;
+}
+/*意见反馈页面样式结束*/
+
+/*押金缴纳页面样式开始*/
+.stepBox {
+	background: #f7f7f7;
+	width: 90%;
+	padding: 2rem 5% 4rem 5%;
+	text-align: center;
+}
+.step-list {
+	width: 96%;
+	margin: 0 2%;
+	height: 4rem;
+	position: relative;
+}
+.step-list li {
+	position: absolute;
+}
+.step-list li.step-line {
+	width: 23%;
+	margin: 0 1%;
+	height: 0.4rem;
+	background: #ccc;
+}
+.num-box {
+	width: 3rem;
+	height: 3rem;
+	border-radius: 50%;
+	-ms-border-radius: 50%;
+	background: #ccc;
+	color: #fff;
+	font-size: 1.4rem;
+	line-height: 3rem;
+	border: 3px solid #f7f7f7;
+	text-align: center;
+	display: inline-block;
+	margin: 0 auto;
+}
+.step-list li.step-num .step-word {
+	padding-top: 1rem;
+	font-size: 1.4rem;
+	color: #ccc;
+}
+.step-list li:nth-child(1) {
+	left: 0;
+	top: 0;
+	z-index: 10;
+}
+.step-list li .step-word {
+	position: relative;
+	left: 0.3rem;
+}
+.step-list li:nth-child(2) {
+	left: 3rem;
+	top: 1.5rem;
+	z-index: 9;
+}
+.step-list li:nth-child(3) {
+	left: 28%;
+	top: 0;
+	z-index: 10;
+}
+.step-list li:nth-child(4) {
+	left: 36%;
+	top: 1.5rem;
+	z-index: 9;
+}
+.step-list li:nth-child(5) {
+	left: 56%;
+	top: 0;
+	z-index: 10;
+}
+.step-list li:nth-child(6) {
+	left: 70%;
+	top: 1.5rem;
+	z-index: 9;
+}
+.step-list li:nth-child(7) {
+	left: 83%;
+	top: 0;
+	z-index: 10;
+}
+.com-bg {
+	background: #fb7c58 !important;
+	color: #fff !important;
+}
+.com_font {
+	color: #fb7c58 !important;
+}
+.depositBox {
+	padding: 0.5rem 5%;
+}
+.depoTit {
+	font-size: 1.6rem;
+	text-align: left;
+}
+.depoTit span {
+	font-size: 1rem;
+	color: #999;
+}
+.depositMoney {
+	font-size: 1.6rem;
+	color: #fb7c58;
+	text-align: right;
+}
+.depositMoney span {
+	font-size: 1.6rem;
+	color: #444;
+}
+.depoRemind {
+	font-size: 1.2rem;
+	color: #999;
+	line-height: 1.6rem;
+	padding: 0 5%;
+}
+/*单选/多选按钮样式开始*/
+.button-holder .regular-radio,.checkbox-holder .regular-radio {
+	display: none;
+}
+.button-holder label{
+	/*vertical-align: middle;*/
+	margin-right: 6px;
+	position: relative;
+	top: 4px;
+}
+.regular-radio + label {
+	-webkit-appearance: none;
+	background: url(../images/cb-normal.png) no-repeat;
+	background-size: 100% 100%;
+	/*padding: 8px;*/
+	width: 2rem;
+	height: 2rem;
+	display: inline-block;
+	position: relative;
+	cursor: pointer;
+	border: none;
+}
+
+.regular-radio:checked + label:after {
+	content: ' ';
+	/*padding: 8px;*/
+	width: 2rem;
+	height: 2rem;
+	border-radius: 50px;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	background: url(../images/cb-selected.png) no-repeat;
+	background-size: 100% 100%;
+	left: 0;
+	cursor: pointer;
+	border: none;
+}
+.radio-word-black {
+	color: #000 !important;
+}
+.regular-radio:checked + label {
+	color: #99a1a7;
+}
+.radiobox {
+	display: inline-block;
+}
+.checkbox-holder label{
+	margin-right: 6px;
+	position: relative;
+	top: 4px;
+}
+.checkbox-holder input.regular-radio + label {
+	-webkit-appearance: none;
+	background: url(../images/cbcheck-normal.png) no-repeat;
+	background-size: 100% 100%;
+	width: 2rem;
+	height: 2rem;
+	display: inline-block;
+	position: relative;
+	cursor: pointer;
+	border: none;
+	padding: 0;
+	position: relative;
+	top: -1px;
+}
+.checkbox-holder input.regular-radio:checked + label:after {
+	content: ' ';
+	width: 2rem;
+	height: 2rem;
+	border-radius: 0 !important;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	background: url(../images/cb-selected.png) no-repeat !important;
+	background-size: 100% 100%;
+	left: 0;
+	cursor: pointer;
+	border: none;
+	padding: 0;
+}
+/*.checkbox-holder input.regular-radio:disabled + label:after{ 
+	content: ' ';
+	width: 2rem;
+	height: 2rem;
+	border-radius: 0 !important;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	background: url(../images/cbcheckbox-disabled.png) no-repeat !important;
+	background-size: 100% 100%;
+	left: 0;
+	cursor: pointer;
+	border: none;
+	padding: 0;
+	cursor:not-allowed; 
+}*/
+.checkbox-holder .radio-word-black {
+	color: #000 !important;
+}
+.checkbox-holder input.regular-radio:checked + label {
+	color: #99a1a7;
+}
+.checkbox-holder .radiobox {
+	display: inline-block;
+	margin-right: 0;
+}
+.powers-tdcheck {
+	padding: 0 !important;
+	text-align: center !important;
+}
+.powers-checkbox input.regular-radio + label,.powers-tdcheck input.regular-radio + label {
+	top: 3px !important;
+}
+
+/*单选按钮样式结束*/
+.wxPay {
+	overflow: hidden;
+	zoom: 1;
+	width: 90%;
+	padding: 3rem 0 1rem 0;
+	margin: 0 5%;
+	border-bottom: 1px solid #e0e0e0;
+}
+.wxPay_icon {
+	display: inline-block;
+	height: 2rem;
+
+}
+.wxPay_word {
+	line-height: 2rem;
+	font-size: 1.4rem;
+	padding-left: 0.5rem;
+}
+/*押金缴纳页面样式结束*/
+
+
+/*房屋信息页面样式开始*/
+.bgf9 {
+	background: #f9f9f9;
+}
+.houseDetBox {
+	background: #fff;
+	margin-top: 1.5rem;
+	padding: 0.5rem 5%;
+	font-size: 1.3rem;
+	line-height: 2rem;
+	box-shadow: 0 0 5px #ddd;
+}
+.houseDetBox>div {
+	padding: 0.2rem 0;
+}
+.hoPriNum {
+	font-size: 1.6rem;
+	color: #fb7c58;
+}
+.hoRemWord {
+	color: #888;
+}
+.houseDetBox .hoOperation {
+	margin-top: 1rem;
+	padding: 1rem 0;
+	overflow: hidden;
+	zoom: 1;
+	border-top: 1px solid #e0e0e0;
+}
+.comS_Btn {
+	display: inline-block;
+	font-size: 1.4rem;
+	height: 2.6rem;
+	line-height: 2.6rem;
+	padding: 0 1rem;
+	border: 1px solid #fb7c58;
+	color: #fb7c58;
+	border-radius: 3px;
+	background: transparent;
+	margin: 0 0.5rem;
+}
+
+/*房屋信息页面样式结束*/
+
+/*选择认证方式也想样式开始*/
+.authBox {
+	border-top: 1px solid #e0e0e0;
+	border-bottom: 1px solid #e0e0e0;
+	margin: 2rem 0;
+	box-shadow: 0 0 5px #f0f0f0;
+}
+.authBox a {
+	display: block;
+	overflow: hidden;
+	zoom: 1;
+	padding: 1rem 5%;
+	cursor: pointer;
+}
+.authType_icon {
+	display: inline-block;
+	height: 3rem;
+	float: left;
+}
+.authType_word {
+	float: left;
+	font-size: 1.4rem;
+	line-height: 3rem;
+	padding-left: 1rem;
+}
+
+/*选择认证方式也想样式结束*/
+
+/*姓名认证页面样式开始*/
+.authTit {
+	float: left;
+	font-size: 1.4rem;
+	line-height: 5rem;
+	display: inline-block;
+	width: 20%;
+	text-align: left;
+}
+.authInp {
+	width: 76%;
+}
+/*姓名认证页面样式开始*/
+.headRHref {
+	display: inline-block;
+	float: right;
+	padding-right: 4%;
+	color: #fff;
+	font-size: 1.2rem;
+	height: 4rem;
+	line-height: 4rem;
+}
